@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Remind\RmndUtil\Frontend;
 
-use TYPO3\CMS\Frontend\Authentication\FrontendUserAuthentication;
-
 use function implode;
+
 use function is_object;
+use TYPO3\CMS\Frontend\Authentication\FrontendUserAuthentication;
 
 /**
  *

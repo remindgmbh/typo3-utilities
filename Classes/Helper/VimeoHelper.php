@@ -32,7 +32,7 @@ class VimeoHelper
             $segments = explode('/', $path);
 
             /* Function used for array_filter to delete empty valus */
-            $filterFunction = fn($value) => $value !== null && $value !== '';
+            $filterFunction = fn ($value) => $value !== null && $value !== '';
 
             /* Filter and reindex the array */
             $values = array_values(array_filter($segments, $filterFunction));

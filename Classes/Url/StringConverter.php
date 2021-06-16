@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Remind\RmndUtil\Url;
 
+use function preg_replace;
 use function str_replace;
 use function strtolower;
-use function preg_replace;
 
 /**
  * Description of StringConverter
