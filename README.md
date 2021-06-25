@@ -2,8 +2,8 @@
 
 This repository contains commonly used functions to be used among TYPO3 projects.
 
-[travis-img]: https://img.shields.io/travis/remindgmbh/typo3-utilitites.svg?style=flat-square
-[codecov-img]: https://img.shields.io/codecov/c/github/remindgmbh/typo3-utilities.svg?style=flat-square
+[travis-img]: https://img.shields.io/travis/com/remindgmbh/typo3-utilities?style=flat-square
+[codecov-img]: https://img.shields.io/codecov/c/github/remindgmbh/typo3-utilities?style=flat-square
 [php-v-img]: https://img.shields.io/packagist/php-v/remind/typo3-utilities?style=flat-square
 [github-issues-img]: https://img.shields.io/github/issues/remindgmbh/typo3-utilities.svg?style=flat-square
 [contrib-welcome-img]: https://img.shields.io/badge/contributions-welcome-blue.svg?style=flat-square
