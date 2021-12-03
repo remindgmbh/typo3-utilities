@@ -14,7 +14,7 @@ trait FlexFormServiceInjectionTrait
     /**
      * A flex form service instance.
      *
-     * @var FlexFormService
+     * @var FlexFormService|null
      */
     protected ?FlexFormService $flexformService = null;
 

@@ -34,7 +34,7 @@ class CleanupDeletedRecordsCommand extends Command
 
     /**
      *
-     * @var ConnectionPool
+     * @var ConnectionPool|null
      */
     protected ?ConnectionPool $connectionPool = null;
 

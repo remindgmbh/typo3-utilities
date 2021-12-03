@@ -36,9 +36,9 @@ class YouTubeHelper
         /* If the regex worked */
         if (preg_match($pattern, $url, $match)) {
             /* Assign the video id to the return varialbe */
-            $videoId = $match[1];
+            $videoId = $match[1] ?? '';
         }
 
-        return '' . $videoId;
+        return (string) $videoId;
     }
 }

@@ -1,15 +1,15 @@
 language: php
 
 os: linux
-dist: xenial
+dist: focal
 
 php:
     - 7.4
+    - 8.0
 
 env:
     global:
         - XDEBUG_MODE=coverage
-
 
 notifications:
     email:
@@ -20,7 +20,7 @@ notifications:
 
 before_script:
     - composer self-update --no-progress --quiet --no-interaction
-    - composer install --no-progress --quiet --no-interaction
+    - composer update --no-progress --quiet --no-interaction
 
 script:
     - composer run test

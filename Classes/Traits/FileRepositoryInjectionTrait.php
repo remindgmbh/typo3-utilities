@@ -11,7 +11,7 @@ trait FileRepositoryInjectionTrait
     /**
      * A file repository instance.
      *
-     * @var FileRepository
+     * @var FileRepository|null
      */
     protected ?FileRepository $fileRepository = null;
 

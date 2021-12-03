@@ -11,7 +11,7 @@ trait HashServiceInjectionTrait
     /**
      * A hash service instance.
      *
-     * @var HashService
+     * @var HashService|null
      */
     protected ?HashService $hashService = null;
 

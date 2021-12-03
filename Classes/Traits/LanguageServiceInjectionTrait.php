@@ -11,7 +11,7 @@ trait LanguageServiceInjectionTrait
     /**
      * A language service instance.
      *
-     * @var LanguageService
+     * @var LanguageService|null
      */
     protected ?LanguageService $languageService = null;
 

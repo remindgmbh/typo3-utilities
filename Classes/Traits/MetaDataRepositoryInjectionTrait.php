@@ -11,7 +11,7 @@ trait MetaDataRepositoryInjectionTrait
     /**
      * A meta data repository instance.
      *
-     * @var MetaDataRepository
+     * @var MetaDataRepository|null
      */
     protected ?MetaDataRepository $metaDataRepository = null;
 

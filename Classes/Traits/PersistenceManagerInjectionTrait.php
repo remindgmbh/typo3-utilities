@@ -11,7 +11,7 @@ trait PersistenceManagerInjectionTrait
     /**
      * A persistence manager instance.
      *
-     * @var PersistenceManager
+     * @var PersistenceManager|null
      */
     protected ?PersistenceManager $persistenceManager = null;
 

@@ -14,7 +14,7 @@ trait ConfigurationManagerInjectionTrait
     /**
      * A configuration manager instance.
      *
-     * @var ConfigurationManager
+     * @var ConfigurationManager|null
      */
     protected ?ConfigurationManager $configurationManager = null;
 

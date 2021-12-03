@@ -11,7 +11,7 @@ trait PropertyMapperInjectionTrait
     /**
      * A property mapper instance.
      *
-     * @var PropertyMapper
+     * @var PropertyMapper|null
      */
     protected ?PropertyMapper $propertyMapper = null;
 

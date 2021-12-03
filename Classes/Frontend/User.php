@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Remind\RmndUtil\Frontend;
 
-use function implode;
-
-use function is_object;
 use TYPO3\CMS\Frontend\Authentication\FrontendUserAuthentication;
+
+use function implode;
+use function is_object;
 
 /**
  *
@@ -17,7 +17,7 @@ class User
     /**
      * The user instance from the globals variable.
      *
-     * @var FrontendUserAuthentication
+     * @var FrontendUserAuthentication|null
      */
     protected ?FrontendUserAuthentication $feUser = null;
 

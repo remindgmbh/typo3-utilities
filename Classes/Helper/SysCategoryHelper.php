@@ -7,6 +7,7 @@ namespace Remind\RmndUtil\Helper;
 use function array_search;
 use function is_array;
 use function is_object;
+
 use PDO;
 use TYPO3\CMS\Core\Category\Collection\CategoryCollection;
 use TYPO3\CMS\Core\Database\ConnectionPool;
@@ -14,7 +15,6 @@ use TYPO3\CMS\Core\Database\Query\QueryBuilder;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Domain\Repository\CategoryRepository;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
-
 use TYPO3\CMS\Extbase\Persistence\Generic\Qom\ComparisonInterface;
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 use TYPO3\CMS\Extbase\Persistence\QueryResultInterface;
@@ -46,7 +46,7 @@ class SysCategoryHelper
     /**
      * A TYPO3 object manager instance.
      *
-     * @var ObjectManager
+     * @var ObjectManager|null
      */
     protected ?ObjectManager $objectManager = null;
 

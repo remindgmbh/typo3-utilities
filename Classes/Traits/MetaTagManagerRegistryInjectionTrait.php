@@ -11,7 +11,7 @@ trait MetaTagManagerRegistryInjectionTrait
     /**
      * A meta tag manager registry instance.
      *
-     * @var MetaTagManagerRegistry
+     * @var MetaTagManagerRegistry|null
      */
     protected ?MetaTagManagerRegistry $metaTagManagerRegistry = null;
 

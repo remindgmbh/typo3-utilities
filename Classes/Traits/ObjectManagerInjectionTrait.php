@@ -11,7 +11,7 @@ trait ObjectManagerInjectionTrait
     /**
      * An object manager instance.
      *
-     * @var ObjectManager
+     * @var ObjectManager|null
      */
     protected ?ObjectManager $objectManager = null;
 

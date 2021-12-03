@@ -14,7 +14,7 @@ trait PageRepositoryInjectionTrait
     /**
      * A page repository instance.
      *
-     * @var PageRepository
+     * @var PageRepository|null
      */
     protected ?PageRepository $pageRepository = null;
 

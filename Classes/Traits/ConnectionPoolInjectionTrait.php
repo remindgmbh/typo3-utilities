@@ -14,7 +14,7 @@ trait ConnectionPoolInjectionTrait
     /**
      * A connection pool instance.
      *
-     * @var ConnectionPool
+     * @var ConnectionPool|null
      */
     protected ?ConnectionPool $connectionPool = null;
 

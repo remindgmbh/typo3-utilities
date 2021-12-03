@@ -14,7 +14,7 @@ trait DispatcherInjectionTrait
     /**
      * A dispatcher instance.
      *
-     * @var Dispatcher
+     * @var Dispatcher|null
      */
     protected ?Dispatcher $dispatcher = null;
 

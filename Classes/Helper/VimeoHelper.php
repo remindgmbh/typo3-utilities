@@ -50,6 +50,6 @@ class VimeoHelper
             }
         }
 
-        return '' . $videoId;
+        return (string) $videoId;
     }
 }

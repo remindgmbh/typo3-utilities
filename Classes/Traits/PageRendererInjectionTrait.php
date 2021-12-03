@@ -14,7 +14,7 @@ trait PageRendererInjectionTrait
     /**
      * A page renderer instance.
      *
-     * @var PageRenderer
+     * @var PageRenderer|null
      */
     protected ?PageRenderer $pageRenderer = null;
 
