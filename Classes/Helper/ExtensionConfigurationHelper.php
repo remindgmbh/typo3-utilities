@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Remind\RmndUtil\Helper;
 
+use function is_array;
 use Psr\Log\LoggerAwareTrait;
 use TYPO3\CMS\Core\Configuration\Exception\ExtensionConfigurationExtensionNotConfiguredException;
 use TYPO3\CMS\Core\Configuration\Exception\ExtensionConfigurationPathDoesNotExistException;
 use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
 
-use function is_array;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
  * An ExtensionConfiguration API wrapper.
