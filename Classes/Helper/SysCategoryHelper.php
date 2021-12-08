@@ -69,7 +69,7 @@ class SysCategoryHelper
      *
      * @var string
      */
-    protected string $field = 'categories';
+    protected string $field = self::CATEGORY_FIELD;
 
     /**
      * A system category repository instance.
@@ -101,10 +101,8 @@ class SysCategoryHelper
      */
     public function __construct(int $uid, string $table, string $field = self::CATEGORY_FIELD)
     {
-        /* Assign and sanitize the parameter */
-        $this->uid = (int) $uid;
-
         /* Assign the parameter */
+        $this->uid = $uid;
         $this->tableName = $table;
         $this->field = $field;
 
