@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Remind\RmndUtil\Helper;
 
-use function array_search;
-use function is_array;
-use function is_object;
-
 use PDO;
 use TYPO3\CMS\Core\Category\Collection\CategoryCollection;
 use TYPO3\CMS\Core\Database\ConnectionPool;
@@ -18,6 +14,10 @@ use TYPO3\CMS\Extbase\Object\ObjectManager;
 use TYPO3\CMS\Extbase\Persistence\Generic\Qom\ComparisonInterface;
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 use TYPO3\CMS\Extbase\Persistence\QueryResultInterface;
+
+use function array_search;
+use function is_array;
+use function is_object;
 
 /**
  * Description of SysCategory
