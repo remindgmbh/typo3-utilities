@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Remind\RmndUtil\Traits;
 
-use TYPO3\CMS\Frontend\Page\PageRepository;
+use TYPO3\CMS\Core\Domain\Repository\PageRepository;
 
 /**
  *
