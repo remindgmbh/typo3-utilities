@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Remind\RmndUtil\Sitemap;
 
-use TYPO3\CMS\Seo\XmlSitemap\PagesXmlSitemapDataProvider;
-
 use function stristr;
+
+use TYPO3\CMS\Seo\XmlSitemap\PagesXmlSitemapDataProvider;
 
 /**
  * Extenstion of the TYPO3 PagesXmlSitemapDataProvider that provides fully
