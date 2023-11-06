@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Remind\RmndUtil\Helper;
 
-use function filter_input;
 use function gethostbyname;
-
-use const INPUT_SERVER;
 
 /**
  * Description of IpAddressHelper
