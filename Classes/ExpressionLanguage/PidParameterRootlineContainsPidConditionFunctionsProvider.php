@@ -42,7 +42,6 @@ class PidParameterRootlineContainsPidConditionFunctionsProvider implements Expre
             int $comparePid,
             bool $additionallyCheckCurrentRootline = false
         ) {
-
             /* If current rootline should be checked do that first and return if successful */
             if ($additionallyCheckCurrentRootline) {
                 /* Rootline on current page */
