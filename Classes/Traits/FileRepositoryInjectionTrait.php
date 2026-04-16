@@ -8,17 +8,11 @@ use TYPO3\CMS\Core\Resource\FileRepository;
 
 trait FileRepositoryInjectionTrait
 {
-    /**
-     * A file repository instance.
-     *
-     * @var FileRepository|null
-     */
     protected ?FileRepository $fileRepository = null;
 
     /**
      * TYPO3/Symfony DI auto injection.
-     *
-     * @param FileRepository $fileRepository
+     * @param FileRepository $fileRepository A file repository instance
      * @return void
      */
     public function injectFileRepository(FileRepository $fileRepository): void

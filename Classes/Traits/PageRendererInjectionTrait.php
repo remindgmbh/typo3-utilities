@@ -11,11 +11,6 @@ use TYPO3\CMS\Core\Page\PageRenderer;
  */
 trait PageRendererInjectionTrait
 {
-    /**
-     * A page renderer instance.
-     *
-     * @var PageRenderer|null
-     */
     protected ?PageRenderer $pageRenderer = null;
 
     /**

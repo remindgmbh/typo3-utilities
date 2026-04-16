@@ -8,17 +8,12 @@ use TYPO3\CMS\Extbase\Object\ObjectManager;
 
 trait ObjectManagerInjectionTrait
 {
-    /**
-     * An object manager instance.
-     *
-     * @var ObjectManager|null
-     */
     protected ?ObjectManager $objectManager = null;
 
     /**
      * TYPO3/Symfony DI auto injection.
      *
-     * @param ObjectManager $objectManager
+     * @param ObjectManager $objectManager An object manager instance
      * @return void
      */
     public function injectObjectManager(ObjectManager $objectManager): void

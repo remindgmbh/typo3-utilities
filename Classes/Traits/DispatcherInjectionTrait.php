@@ -11,11 +11,6 @@ use TYPO3\CMS\Extbase\SignalSlot\Dispatcher;
  */
 trait DispatcherInjectionTrait
 {
-    /**
-     * A dispatcher instance.
-     *
-     * @var Dispatcher|null
-     */
     protected ?Dispatcher $dispatcher = null;
 
     /**

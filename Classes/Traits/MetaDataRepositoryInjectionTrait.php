@@ -8,17 +8,11 @@ use TYPO3\CMS\Core\Resource\Index\MetaDataRepository;
 
 trait MetaDataRepositoryInjectionTrait
 {
-    /**
-     * A meta data repository instance.
-     *
-     * @var MetaDataRepository|null
-     */
     protected ?MetaDataRepository $metaDataRepository = null;
 
     /**
      * TYPO3/Symfony DI auto injection.
-     *
-     * @param MetaDataRepository $metaDataRepository
+     * @param MetaDataRepository $metaDataRepository A meta data repository instance
      * @return void
      */
     public function injectMetaDataRepository(MetaDataRepository $metaDataRepository): void

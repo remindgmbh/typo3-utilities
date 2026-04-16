@@ -11,11 +11,6 @@ use TYPO3\CMS\Core\Database\ConnectionPool;
  */
 trait ConnectionPoolInjectionTrait
 {
-    /**
-     * A connection pool instance.
-     *
-     * @var ConnectionPool|null
-     */
     protected ?ConnectionPool $connectionPool = null;
 
     /**

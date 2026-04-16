@@ -14,7 +14,6 @@ final class YouTubeHelperTest extends UnitTestCase
 {
     /**
      *
-     * @return void
      */
     public function testCompleteUrlWithArguments(): void
     {

@@ -8,11 +8,6 @@ use TYPO3\CMS\Core\MetaTag\MetaTagManagerRegistry;
 
 trait MetaTagManagerRegistryInjectionTrait
 {
-    /**
-     * A meta tag manager registry instance.
-     *
-     * @var MetaTagManagerRegistry|null
-     */
     protected ?MetaTagManagerRegistry $metaTagManagerRegistry = null;
 
     /**
