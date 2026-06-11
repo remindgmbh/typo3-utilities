@@ -7,7 +7,6 @@ namespace Remind\RmndUtil\Service;
 use function file_get_contents;
 use function filter_input;
 use function json_decode;
-
 use const INPUT_POST;
 use const INPUT_SERVER;
 
@@ -18,34 +17,26 @@ class GoogleRecaptchaService
 {
     /**
      * The recaptcha url with sprintf placeholders for parameters.
-     * @var string
      */
     public const GOOGLE_URL = 'https://www.google.com/recaptcha/api/siteverify?secret=%s&response=%s&remoteip=%s';
 
     /**
      * The google recaptcha response variable name.
-     * @var string
      */
     public const RESPONSE_VAR_NAME = 'g-recaptcha-response';
 
     /**
      * The secret used for requests.
-     *
-     * @var string
      */
     protected string $secret = '';
 
     /**
      * The token response from the client side.
-     *
-     * @var string
      */
     protected string $response = '';
 
     /**
      * The server ip address.
-     *
-     * @var string
      */
     protected string $remoteIp = '';
 

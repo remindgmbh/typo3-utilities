@@ -11,11 +11,6 @@ use TYPO3\CMS\Core\Service\FlexFormService;
  */
 trait FlexFormServiceInjectionTrait
 {
-    /**
-     * A flex form service instance.
-     *
-     * @var FlexFormService|null
-     */
     protected ?FlexFormService $flexformService = null;
 
     /**

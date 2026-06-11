@@ -8,17 +8,11 @@ use TYPO3\CMS\Extbase\Security\Cryptography\HashService;
 
 trait HashServiceInjectionTrait
 {
-    /**
-     * A hash service instance.
-     *
-     * @var HashService|null
-     */
     protected ?HashService $hashService = null;
 
     /**
      * TYPO3/Symfony DI auto injection.
-     *
-     * @param HashService $hashService
+     * @param HashService $hashService A hash service instance
      * @return void
      */
     public function injectHashService(HashService $hashService): void

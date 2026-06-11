@@ -17,25 +17,12 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  */
 class CleanupDeletedRecordsCommand extends Command
 {
-    /**
-     * @var string
-     */
     protected const OPTION_TABLE = 'table';
 
-    /**
-     * @var string
-     */
     protected const OPTION_MAX_AGE = 'maxAge';
 
-    /**
-     * @var string
-     */
     protected const OPTION_MAX_COUNT = 'maxCount';
 
-    /**
-     *
-     * @var ConnectionPool|null
-     */
     protected ?ConnectionPool $connectionPool = null;
 
     /**
@@ -77,8 +64,6 @@ class CleanupDeletedRecordsCommand extends Command
     /**
      * Run the actual command.
      *
-     * @param InputInterface $input
-     * @param OutputInterface $output
      * @return int|null Returns 0 or null on success or an error code
      */
     protected function execute(InputInterface $input, OutputInterface $output): ?int

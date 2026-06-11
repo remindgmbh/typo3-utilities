@@ -11,16 +11,10 @@ use TYPO3\CMS\Core\Site\SiteFinder;
  */
 trait SiteFinderInjectionTrait
 {
-    /**
-     * A SiteFinder instance.
-     *
-     * @var SiteFinder|null
-     */
     protected ?SiteFinder $siteFinder = null;
 
     /**
      * TYPO3/Symfony DI auto injection.
-     *
      * @param SiteFinder $siteFinder The SiteFinder instance.
      * @return void
      */

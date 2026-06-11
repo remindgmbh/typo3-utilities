@@ -8,17 +8,11 @@ use TYPO3\CMS\Extbase\Persistence\Generic\PersistenceManager;
 
 trait PersistenceManagerInjectionTrait
 {
-    /**
-     * A persistence manager instance.
-     *
-     * @var PersistenceManager|null
-     */
     protected ?PersistenceManager $persistenceManager = null;
 
     /**
      * TYPO3/Symfony DI auto injection.
-     *
-     * @param PersistenceManager $persistenceManager
+     * @param PersistenceManager $persistenceManager A persistence manager instance
      * @return void
      */
     public function injectPersistenceManager(PersistenceManager $persistenceManager): void

@@ -31,6 +31,6 @@ class StringConverter
         $result = preg_replace('/[^A-Za-z0-9\-]/', '', $lowered);
 
         /* Final test for return value on error */
-        return $result === null ? '' : $result;
+        return $result ?? '';
     }
 }

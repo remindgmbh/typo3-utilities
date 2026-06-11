@@ -8,17 +8,11 @@ use TYPO3\CMS\Extbase\Property\PropertyMapper;
 
 trait PropertyMapperInjectionTrait
 {
-    /**
-     * A property mapper instance.
-     *
-     * @var PropertyMapper|null
-     */
     protected ?PropertyMapper $propertyMapper = null;
 
     /**
      * TYPO3/Symfony DI auto injection.
-     *
-     * @param PropertyMapper $propertyMapper
+     * @param PropertyMapper $propertyMapper A property mapper instance
      * @return void
      */
     public function injectPropertyMapper(PropertyMapper $propertyMapper): void

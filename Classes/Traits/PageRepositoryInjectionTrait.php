@@ -11,11 +11,6 @@ use TYPO3\CMS\Core\Domain\Repository\PageRepository;
  */
 trait PageRepositoryInjectionTrait
 {
-    /**
-     * A page repository instance.
-     *
-     * @var PageRepository|null
-     */
     protected ?PageRepository $pageRepository = null;
 
     /**

@@ -13,20 +13,17 @@ class SessionHelper
 {
     /**
      * Identifier for the TYPO3 backend mode.
-     * @var string
      */
     public const TYPO3_MODE_BE = 'BE';
 
     /**
      * Identifier for the TYPO3 frontend mode.
-     * @var string
      */
     public const TYPO3_MODE_FE = 'FE';
 
     /**
      * The selected TYPO3 mode.
      *
-     * @var string
      */
     protected string $mode = self::TYPO3_MODE_FE;
 
@@ -35,13 +32,11 @@ class SessionHelper
      * The User-Object with the session-methods.
      * Either $GLOBALS['BE_USER'] or $GLOBALS['TSFE']->fe_user.
      *
-     * @var AbstractUserAuthentication
      */
     protected ?AbstractUserAuthentication $sessionObject = null;
 
     /**
      * The session key to store the data in.
-     * @var string
      */
     protected string $storageKey = '';
 
@@ -61,7 +56,7 @@ class SessionHelper
                 $this->sessionObject = $GLOBALS['BE_USER'];
                 break;
             case self::TYPO3_MODE_FE: // If it is the FE mode
-            default:                  // Or any other mode
+            default: // Or any other mode
                 $this->mode = self::TYPO3_MODE_FE;
                 $this->sessionObject = $GLOBALS['TSFE']->fe_user;
         }
@@ -98,7 +93,7 @@ class SessionHelper
      * @param mixed $value A value that will be stored.
      * @return void
      */
-    public function set(string $key, $value): void
+    public function set(string $key, mixed $value): void
     {
         /* Get the data for the set storage key */
         $sessionData = $this->sessionObject->getSessionData($this->storageKey);
@@ -141,7 +136,7 @@ class SessionHelper
      * @param string $key The key whoose value will be returned.
      * @return mixed|null
      */
-    public function get(string $key)
+    public function get(string $key): mixed
     {
         /* Get the data for the set storage key */
         $sessionData = $this->sessionObject->getSessionData($this->storageKey);
